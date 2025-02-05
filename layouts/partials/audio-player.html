@@ -1,0 +1,5 @@
+{{ if .Params.audio }}
+<audio controls preload="none">
+	<source src="{{ .Params.audio }}" type="audio/mpeg">
+</audio>
+{{ end }}
