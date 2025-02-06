@@ -13,7 +13,7 @@
 	
 	{{/* iTunes specific tags */}}
 	<itunes:author>Saadia Carbis</itunes:author>
-	<itunes:image href="{{ "podcast.png" | absURL }}"/>
+	<itunes:image href="{{ "artwork.png" | absURL }}"/>
 	<itunes:subtitle text="This is the audioblog stream for Digging for Fire, a blog about technology and education (and sometimes gardening)."/>
 	<itunes:category text="Technology"/>
 	<itunes:category text="Education"/>

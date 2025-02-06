@@ -17,7 +17,7 @@ params:
     - name: "Overcast"
       url: "#"
     - name: "RSS"
-      url: "#"
+      url: "/podcast.xml"
   assets:
     favicon: /favicon.ico
     favicon16x16: /favicon-16x16.png
