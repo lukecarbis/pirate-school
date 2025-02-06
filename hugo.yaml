@@ -1,0 +1,68 @@
+baseURL: "https://pirateschool.fm/"
+languageCode: "en-au"
+title: "Pirate School"
+theme: "PaperMod"
+
+params:
+  defaultTheme: "dark"
+  disableThemeToggle: true
+  homeInfoParams:
+    Title: Ahoy there, matey!
+    Content: Pirate School is weekly podcast about the chaotic, messy, wild world of home education.
+  socialIcons: # optional
+    - name: "ApplePodcasts"
+      url: "#"
+    - name: "Spotify"
+      url: "#"
+    - name: "Overcast"
+      url: "#"
+    - name: "RSS"
+      url: "#"
+  assets:
+    favicon: /favicon.ico
+    favicon16x16: /favicon-16x16.png
+    favicon32x32: /favicon-32x32.png
+    apple_touch_icon: /apple-touch-icon.png
+    safari_pinned_tab: /mask.svg
+  label:
+      text: 
+      icon: /title.webp
+      iconHeight: 100
+  
+
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+      xhtml: true
+      unsafe: true
+
+menu:
+  navbar:
+    - identifier: "apple"
+      name: "Apple Podcasts"
+      url: "#"
+      weight: 10
+    - identifier: "spotify"
+      name: "Spotify"
+      url: "#"
+      weight: 20
+    - identifier: "overcast"
+      name: "Overcast"
+      url: "#"
+      weight: 30
+    - identifier: "rss"
+      name: "RSS"
+      url: "#"
+      weight: 40
+
+outputs:
+  home: ["html", "rss", "podcast"]
+
+outputFormats:
+  podcast:
+    mediatype: "application/rss+xml"
+    baseName: "podcast"
+    isPlainText: false
+    noUgly: true
+    path: "/"
