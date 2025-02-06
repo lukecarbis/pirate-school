@@ -11,9 +11,9 @@ params:
     Content: Pirate School is weekly podcast about the chaotic, messy, wild world of home education.
   socialIcons: # optional
     - name: "ApplePodcasts"
-      url: "#"
+      url: "https://podcasts.apple.com/us/podcast/pirate-school/id1794742428"
     - name: "Spotify"
-      url: "#"
+      url: "https://open.spotify.com/show/1B8HJx7DcWpNlJZOGQuujm"
     - name: "Overcast"
       url: "#"
     - name: "RSS"
