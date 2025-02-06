@@ -54,6 +54,13 @@
 		  {{ end }}
 	  <itunes:summary>{{ .Summary | html }}</itunes:summary>
 	  <itunes:explicit>false</itunes:explicit>
+	  {{ if isset .Params "season" }}<itunes:season>{{ .Params.season }}</itunes:season>{{ end }}
+	  {{ if isset .Params "episode" }}<itunes:episode>{{ .Params.episode }}</itunes:episode>{{ end }}
+	  {{ if eq .Params.episodeType "bonus" }}
+		  <itunes:episodeType>bonus</itunes:episodeType>
+	  {{ else }}
+		  <itunes:episodeType>full</itunes:episodeType>
+	  {{ end }}
 	</item>
 	{{ end }}
 	
