@@ -37,25 +37,6 @@ markup:
       xhtml: true
       unsafe: true
 
-menu:
-  navbar:
-    - identifier: "apple"
-      name: "Apple Podcasts"
-      url: "#"
-      weight: 10
-    - identifier: "spotify"
-      name: "Spotify"
-      url: "#"
-      weight: 20
-    - identifier: "overcast"
-      name: "Overcast"
-      url: "#"
-      weight: 30
-    - identifier: "rss"
-      name: "RSS"
-      url: "#"
-      weight: 40
-
 outputs:
   home: ["html", "rss", "podcast"]
 
